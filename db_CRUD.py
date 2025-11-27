@@ -64,7 +64,7 @@ def edit_presents(presents):
     conn = get_conn()
     cur = conn.cursor()
     cur.execute(
-        "UPDATE `presents` SET `price_title` = %s, `price` =%s,`for_who` = %s, WHERE `id` = %s;",
+        "UPDATE `presents` SET `present_title` = %s, `price` =%s,`for_who` = %s WHERE `id` = %s;",
         (present_title, price, for_who, edit_id)
     )
     conn.commit()

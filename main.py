@@ -1,8 +1,6 @@
-from data import load_presents
-from file_CRUD import *
+from db_CRUD import *
 
 presents = load_presents()
-
 id_counter = 3
 while True: #begalinis ciklas, kuris igalina funkcijos veikima vel ir vel
     print_info()
@@ -17,4 +15,4 @@ while True: #begalinis ciklas, kuris igalina funkcijos veikima vel ir vel
         case '4':
             delete_presents(presents)
         case '5':
-            break
+                break
